@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beetroot Powder for Health</title>
+    <!-- Use Playfair Display and Inter fonts from Google Fonts for a more elegant feel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font family definitions */
+        .font-playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        .font-inter {
+            font-family: 'Inter', sans-serif;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fcf8f6;
+        }
+        /* Custom animation for fading in elements on load */
+        .fade-in {
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* Hero section with a subtle parallax effect and a more dramatic background */
+        .hero-bg {
+            /* Using a placeholder image for better reliability */
+            background-image: url('https://placehold.co/1740x1080/ffc0cb/ffffff?text=Beetroot+Powder');
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        /* Custom hover effect for cards */
+        .card-hover-effect {
+            transition: all 0.3s ease-in-out;
+        }
+        .card-hover-effect:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        /* A more subtle glow on the button */
+        .btn-glow {
+            transition: all 0.3s ease-in-out;
+        }
+        .btn-glow:hover {
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+
+    <!-- Main container with a soft, natural background -->
+    <div class="min-h-screen flex flex-col items-center bg-gradient-to-br from-pink-100 to-orange-100 pb-12">
+
+        <!-- Hero Section with a dynamic background image and a new font -->
+        <header class="w-full relative h-[70vh] flex items-center justify-center text-center p-4 hero-bg">
+            <!-- Semi-transparent overlay with a strong gradient -->
+            <div class="absolute inset-0 bg-gradient-to-t from-red-800/80 to-pink-500/60 backdrop-blur-sm"></div>
+            <div class="relative max-w-5xl mx-auto p-8 rounded-3xl bg-white/30 backdrop-blur-md shadow-2xl fade-in border border-white/20">
+                <h1 class="font-playfair text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-4 drop-shadow-lg leading-tight">
+                    Beetroot Powder for a Vibrant You
+                </h1>
+                <p class="font-inter text-md sm:text-lg text-white max-w-2xl mx-auto drop-shadow-md tracking-wide">
+                    Harness the natural power of beetroot for your skin, hair, and overall wellness.
+                </p>
+                <!-- Call-to-action button with a glow effect -->
+                <button class="mt-8 px-8 py-3 bg-white text-red-600 font-bold rounded-full shadow-lg hover:bg-red-600 hover:text-white transition-colors duration-300 btn-glow">
+                    Discover the Benefits
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="w-full max-w-6xl bg-white rounded-3xl shadow-2xl -mt-24 z-10 overflow-hidden mb-12 fade-in">
+            
+            <!-- Benefits Section with a new layout -->
+            <section class="p-6 sm:p-10 md:p-16">
+                <h3 class="font-playfair text-3xl sm:text-4xl font-bold text-red-700 mb-10 text-center relative">
+                    Health and Beauty Benefits
+                    <span class="absolute bottom-[-10px] left-1/2 transform -translate-x-1/2 w-24 h-1 bg-red-400 rounded-full"></span>
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Individual Benefit Card with a custom hover effect and richer content -->
+                    <div class="bg-red-50 rounded-3xl p-6 shadow-md card-hover-effect flex flex-col items-center text-center">
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mb-4 shadow-inner">
+                            <span class="text-4xl text-red-500">🌱</span>
+                        </div>
+                        <h4 class="font-semibold text-red-600 text-xl mb-2">Anti-Aging</h4>
+                        <p class="text-gray-700">Prevent signs of aging and reduce the appearance of wrinkles, giving you a youthful glow.</p>
+                    </div>
+                    <!-- Individual Benefit Card -->
+                    <div class="bg-red-50 rounded-3xl p-6 shadow-md card-hover-effect flex flex-col items-center text-center">
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mb-4 shadow-inner">
+                            <span class="text-4xl text-blue-400">💧</span>
+                        </div>
+                        <h4 class="font-semibold text-red-600 text-xl mb-2">Skin Hydration</h4>
+                        <p class="text-gray-700">Deeply moisturizes dry skin, leaving it soft, supple, and radiant.</p>
+                    </div>
+                    <!-- Individual Benefit Card -->
+                    <div class="bg-red-50 rounded-3xl p-6 shadow-md card-hover-effect flex flex-col items-center text-center">
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mb-4 shadow-inner">
+                            <span class="text-4xl text-orange-500">💪</span>
+                        </div>
+                        <h4 class="font-semibold text-red-600 text-xl mb-2">Immunity Boost</h4>
+                        <p class="text-gray-700">Packed with nutrients to boost your immune system and fight inflammation naturally.</p>
+                    </div>
+                    <!-- Individual Benefit Card -->
+                    <div class="bg-red-50 rounded-3xl p-6 shadow-md card-hover-effect flex flex-col items-center text-center">
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mb-4 shadow-inner">
+                            <span class="text-4xl text-red-600">❤️</span>
+                        </div>
+                        <h4 class="font-semibold text-red-600 text-xl mb-2">Heart Health</h4>
+                        <p class="text-gray-700">Known to help lower blood pressure and manage blood sugar levels.</p>
+                    </div>
+                    <!-- Individual Benefit Card -->
+                    <div class="bg-red-50 rounded-3xl p-6 shadow-md card-hover-effect flex flex-col items-center text-center">
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mb-4 shadow-inner">
+                            <span class="text-4xl text-pink-500">💇‍♀️</span>
+                        </div>
+                        <h4 class="font-semibold text-red-600 text-xl mb-2">Hair Growth</h4>
+                        <p class="text-gray-700">Promotes strong and healthy hair growth from the root.</p>
+                    </div>
+                    <!-- Individual Benefit Card -->
+                    <div class="bg-red-50 rounded-3xl p-6 shadow-md card-hover-effect flex flex-col items-center text-center">
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mb-4 shadow-inner">
+                            <span class="text-4xl text-yellow-400">✨</span>
+                        </div>
+                        <h4 class="font-semibold text-red-600 text-xl mb-2">Natural Glow</h4>
+                        <p class="text-gray-700">Helps brighten the skin and provides a natural, healthy glow.</p>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="mx-auto w-3/4 border-t-2 border-red-200 my-12">
+
+            <!-- Recipes Section with enhanced visuals -->
+            <section class="p-6 sm:p-10 md:p-16">
+                <h3 class="font-playfair text-3xl sm:text-4xl font-bold text-red-700 mb-10 text-center relative">
+                    Simple Recipes & Daily Rituals
+                    <span class="absolute bottom-[-10px] left-1/2 transform -translate-x-1/2 w-24 h-1 bg-red-400 rounded-full"></span>
+                </h3>
+
+                <!-- Recipe Card for Juice -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-16 bg-red-50 rounded-3xl p-8 shadow-xl">
+                    <div class="md:order-2">
+                        <!-- Using a placeholder image for better reliability -->
+                        <img src="https://placehold.co/1742x1161/F7C8D1/ffffff?text=Beetroot+Juice" alt="Beetroot juice in a glass" class="rounded-3xl shadow-2xl w-full h-auto object-cover border-4 border-white">
+                    </div>
+                    <div class="md:order-1">
+                        <h4 class="font-playfair text-2xl sm:text-3xl font-bold text-red-700 mb-4">Beetroot Powder Juice</h4>
+                        <p class="font-inter text-gray-700 leading-relaxed mb-4">
+                            Mix 1 tablespoon of beetroot powder with 1 glass of water for a refreshing and healthy juice.
+                        </p>
+                        <ul class="list-disc list-inside text-gray-600">
+                            <li>For best results, take daily.</li>
+                            <li>Consume before or after a meal.</li>
+                            <li>A perfect start or end to your day.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Recipe Card for Face Mask -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center bg-red-50 rounded-3xl p-8 shadow-xl">
+                    <div class="md:order-1">
+                        <!-- Using a placeholder image for better reliability -->
+                        <img src="https://placehold.co/1887x1258/F7C8D1/ffffff?text=Beetroot+Mask" alt="A woman applying a face mask" class="rounded-3xl shadow-2xl w-full h-auto object-cover border-4 border-white">
+                    </div>
+                    <div class="md:order-2">
+                        <h4 class="font-playfair text-2xl sm:text-3xl font-bold text-red-700 mb-4">Beetroot Powder Face Mask</h4>
+                        <p class="font-inter text-gray-700 leading-relaxed mb-4">
+                            Create a glowing complexion with this simple face mask recipe.
+                        </p>
+                        <ul class="list-disc list-inside text-gray-600">
+                            <li>Mix 1 tbsp powder with 2 tbsp yogurt, honey, or aloe vera gel.</li>
+                            <li>Apply the paste to your face.</li>
+                            <li>Use twice a week for optimal results.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="mx-auto w-3/4 border-t-2 border-red-200 my-12">
+            
+            <!-- Natural Coloring Section with new layout and image -->
+            <section class="p-6 sm:p-10 md:p-16 text-center bg-gradient-to-r from-pink-200 to-red-200 rounded-b-3xl">
+                <h3 class="font-playfair text-3xl sm:text-4xl font-bold text-red-800 mb-6 relative">
+                    A Natural Hue for Your Creations
+                    <span class="absolute bottom-[-10px] left-1/2 transform -translate-x-1/2 w-24 h-1 bg-red-500 rounded-full"></span>
+                </h3>
+                <p class="font-inter text-gray-800 leading-relaxed text-lg max-w-3xl mx-auto mb-8">
+                    Beetroot powder is a fantastic natural coloring agent that adds a vibrant pink or red hue to your culinary creations without any artificial ingredients.
+                </p>
+                <!-- Using a placeholder image for better reliability -->
+                <img src="https://placehold.co/1740x1160/F7C8D1/ffffff?text=Natural+Coloring+Agent" alt="Pink cupcakes and desserts" class="rounded-3xl shadow-2xl w-full max-w-4xl mx-auto h-auto object-cover border-4 border-white">
+            </section>
+
+        </main>
+        
+        <!-- Footer Section with a subtle background -->
+        <footer class="w-full text-center text-gray-600 text-sm py-8 bg-white/50 backdrop-blur-sm shadow-inner mt-auto">
+            <p>&copy; 2023. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
